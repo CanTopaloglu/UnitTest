@@ -1,4 +1,3 @@
-using Azure.Core;
 using FluentAssertions;
 using FluentValidation;
 using NSubstitute;
@@ -268,7 +267,7 @@ public class UserServiceTests
     }
 
     [Fact]
-    public  async  Task DeleteByIdAsync_ShouldLogMessages_WhenExceptionIsThrown()
+    public async  Task DeleteByIdAsync_ShouldLogMessages_WhenExceptionIsThrown()
     {
         //Arrange
         int userId = 1;
